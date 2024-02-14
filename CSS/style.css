@@ -1,0 +1,8 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
+
+titulo{
+    color:rgb(110,46,8);
+    font-family: 'Caveat',cursive;
+    font-weight: 700; 
+}
