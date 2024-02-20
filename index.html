@@ -1,45 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Final</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!--<link rel="stylesheet" href="./css" type="text/css">-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
-        @import
-        url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap');
 
-        .div{
-            font-weight: 700; 
-            width: 30%;
-            text-align: center;
-            span:hover{
-                color: blue;
-            }
-        }
-        
     </style>
 </head>
+
 <body>
-    <div class="titulo">
-        <h1>El Túnel</h1>
-    </div>
-    <div class="div">
-        <form action="">
-            <input type="search" name="" placeholder="Buscar">
-            <button type="submit">
-                <span><i class="bi bi-search"></i></span>
-            </button>
-        </form>        
-        <span><i class="bi bi-person"></i></span>
-        <span><i class="bi bi-balloon-heart"></i></span>        
-        <span><i class="bi bi-bag-check-fill"></i></span>
-        <i class="bi bi-1-cicle-fill"></i>
-        <i class="bi bi-2-cicle-fill"></i>
-        <i class="bi bi-3-cicle-fill"></i>
+    <header class="d-flex">
+        <div class="titulo">
+            <h1>El Túnel</h1>
+        </div>
+        <div class="div d-flex"> <!--span-->
+            <form action="">
+                <input type="search" name="" placeholder="Buscar" style="border-width: 1px 1px 1px none solid gray; border-radius: 10px">
+                <button type="submit" style="border-width: 1px none none none solid gray; border-radius: 10px">
+                    <span><i class="bi span bi-search"></i></span>
+                </button>
+            </form>
+           <div>
+                <span><i class="bi bi-1-circle-fill"></i><i class="bi bi-person"></i></span>
+                <span><i class="bi bi-2-circle-fill"></i><i class="bi bi-balloon-heart"></i></span>
+                <span><i class="bi bi-3-circle-fill"></i><i class="bi bi-bag-check-fill"></i></span>
+           </div> 
+        </div>
+    </header>
+    <nav class="d-flex nav">
+        <a class="a" href="#Inicio">Inicio</a>
+        <a class="a" href="#Libros">Libros</a>
+        <a class="a" href="#Los mas leidos">Los más leidos</a>
+        <a class="a" href="#Accesorios">Accesorios</a>
+        <a class="a" href="#Sucursal">Sucursal</a>
+    </nav>
+    <article>
+        <div class="letras-Grid" >
+            <h1>...Creando nuevos mundos, historias y recuerdos</h1>
+            <h3 style=" font-family:Arial, Helvetica, sans-serif;  font-style: italic;">"Vivir consiste en construir nuevos recuerdos"</h3>
+        </div>
+    </article>
+    <section class="Libros">
+        <H2 style="color: #9C1E12 ">
+            Recomendaciones
+        </H2>
+        <div class="d-flex">
+            <div class="tarjeta-libro">
+                <div class="portada-libro">
+                    <img src=".\Img\LHarryPotter.jpg">
+                </div>
+                <div class="autor">
+                    <h4>Harry Potter y la piedra filosofal</h4>
+                    <p>J.K. Rowling</p>
+                    <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro">
+                <div class="portada-libro">
+                    <img src=".\Img\L100añosdesoledad.jpg">
+                </div>
+                <div class="autor">
+                    <h4>100 Años de soledad</h4>
+                    <p>Gabriel Garcia Marquez</p>
+                    <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro">
+                <div class="portada-libro">
+                    <img src=".\Img\Linsoportableverdaddelser.webp">
+                </div>
+                <div class="autor">
+                    <h4>La insoportable levedad del ser</h4>
+                    <p>Milán Kundora</p>
+                    <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tarjeta-libro">
+                <div class="portada-libro">
+                    <img src=".\Img\Lcomoaguaparachocolate.jpg">
+                </div>
+                <div class="autor">
+                    <h4>Como agua para chocolater</h4>
+                    <p>Laura Esquivel</p>
+                    <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                        <button class="btn">Ver más</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 style="color:#A9411E">Libros</h2> <br>
+        <div class="libros-scroll">
+            <div class="scroll d-flex">
+                <div class="tarjeta-libro">
+                    <div class="portada-libro">
+                        <img src=".\Img\ElenaPoniatowska.jpg">
+                    </div>
+                    <div class="autor">
+                        <h4>Fuerte es el silencio</h4>
+                        <p>Elena Poniatowska</p>
+                        <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                            <p>$450.00</p>
+                            <button class="btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-libro">
+                    <div class="portada-libro">
+                        <img src=".\Img\Lrayuela.jpeg">
+                    </div>
+                    <div class="autor">
+                        <h4>Rayuela</h4>
+                        <p>Julio Cortazar</p>
+                        <div style="padding: 0px 5 px;" class="d-flex jc-sa">
+                            <p>$445.00</p>
+                            <button class="btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-libro">
+                    <div class="portada-libro">
+                        <img src=".\Img\LLeydeHerodes.jpeg">
+                    </div>
+                    <div class="autor">
+                        <h4>Ley de Herodes</h4>
+                        <p>Jorge Ibargüengottia</p>
+                        <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                            <p>$150.00</p>
+                            <button class="btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-libro">
+                    <div class="portada-libro">
+                        <img src=".\Img\AngelesMastretta.jpg">
+                    </div>
+                    <div class="autor">
+                        <h4>Arrancame la vida</h4>
+                        <p>Angeles Maztreta</p>
+                        <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                            <p>$350.00</p>
+                            <button class="btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="tarjeta-libro">
+                    <div class="portada-libro">
+                        <img src=".\Img\VirginiaWoolf.jpg">
+                    </div>
+                    <div class="autor">
+                        <h4>Una habitación</h4>
+                        <p>Virginia Wolf</p>
+                        <div style="padding: 0px 15 px;" class="d-flex jc-sa">
+                            <p>$240.00</p>
+                            <button class="btn">Ver más</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
-    </div>
-    <img src="./Img/portada.jpg" alt="">
+    </section>
+    <article>
+        <h2 style="color:#93252C">Conocenos</h2> <br>
+        <div class="d-flex">
+            <p>El tunel es una cafeteía ideal para los amantes de la literatura <br> <br>
+                Además de su servicio de venta de libros y productos en linea puedes visitar
+                nuestra sucursal y acompañar tu lectura con una taza de café o bebida de tu
+                elección, o bien, disfrutar de los diversos eventos culturales que tenenos para
+                ti. <br>
+                <br>Siguenos en redes sociales y mantente atento a la cartelera de eventos.<br>
+                <br> <b style="color: #93252C; text-align: center;">¡Te Esperamos!</b>
+            </p>
+            <aside>
+                <img src=".\Img\Librero.jpg" alt="" width="570px" height="320px">
+            </aside>
+        </div>
+    </article>
+    <footer class="pie">
+        <div class="secfoot">
+            <div>
+                <h2><b>El Túnel</b></h2>
+                <p>Un espacio para los amantes de la literatura. Encuentra la mejor</p>
+                <p>Seleccion de libros,accesorios y un acogedor espacio en la CDMX</p>
+                <p>para leer y tomar un café con tu libro favorito</p>
+                <p></p>
+                <p><i class="redes bi bi-geo-alt-fill"></i> Av. Álvaro Obregón 90, Roma Nte, Cuauhtemoc, 06700 CDMX</p>
+                <p><i class="redes bi bi-telephone-fill"></i> 56 98 89 07 93 87</p>
+                <p><i class="redes bi bi-envelope-fill"></i> eltunel.libros@gmail.com</p>
+                <div style="text-align: center;">
+                    <span><i class="redes bi bi-facebook"></i> <i class="redes bi bi-twitter-x"></i>  <i class=" redes bi bi-instagram"></i>  <i class="redes bi bi-youtube"></i></span>
+                </div>
+            </div>
+            <div>
+                <h2><b>Información</b></h2>
+                <p><a class="a" href="#">Inicio</a></p>
+                <p><a class="a" href="#">Acerca de Tunel</a></p>
+                <p><a class="a" href="#">Tarjeta de cliente frecuente</a></p>
+                <p><a class="a" href="#">Ventas por Mayoreo</a></p>
+                <p><a class="a" href="#">Facturacion</a></p>
+                <p><a class="a" href="#">Contactanos</a></p>
+                <p><a class="a" href="#">Aviso de privacidad</a></p>
+                <p><a class="a" href="#">Terminos y condiciones</a></p>
+            </div>
+            <div>
+                <h2><b>Subscribete</b></h2>
+                <p>Registrate para recibir noticias de promociones, eventos</p>
+                <p>y actualizaciones</p>
+                <form>
+                    <input type="email" placeholder="Ingrese tu email" name="email" id="email"><button
+                        style="background-color:#A55C44; color:white" type="submit">Enviar</button>
+                </form>
+            </div>
+        </div>
+        <div class="derechos">
+            <p>2024 <i class="bi bi-c-circle"></i> Túnel. Todos los derechos reservados. | Diseñado por Escuela de Código ADIP</p>
+        </div>
+        <!--<p class="text" style="background-color:#B69A76; text-align: centered">2024 <i class="bi bi-c-circle"></i> Túnel. Todos los derechos reservados. | Diseñado por Escuela de Código ADIP </p>-->
+    </footer>
 </body>
 </html>
